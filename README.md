@@ -1,7 +1,7 @@
 # Installation
 
 ```
-conda create -n wandb_tutorial python==3.8
+conda create -n wandb_tutorial python==3.8 | y
 conda activate wandb_tutorial
 pip install -r requirements.txt
 ```
