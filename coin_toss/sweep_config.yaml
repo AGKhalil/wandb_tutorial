@@ -1,0 +1,16 @@
+command:
+  - ${env}
+  - python
+  - train.py
+  - --seed
+  - "42"
+  - ${args}
+method: bayes
+metric:
+  goal: maximize
+  name: hh
+parameters:
+  prob:
+    distribution: uniform
+    max: 1
+    min: 0
