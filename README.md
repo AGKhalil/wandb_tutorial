@@ -77,6 +77,12 @@ wandb.log(
 
 # FAQs
 
+**How do I keep track of my model gradients?**
+
+```
+wandb.watch(model)
+```
+
 **What if I'm already logging to tensorboard?**
 
 `wandb` can automatically log your tensorboard metrics. All you need to do is add the `sync_tensorboard` flag to the `wandb` initialization. Example:
