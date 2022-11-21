@@ -78,6 +78,7 @@ wandb.log(
 # FAQs
 
 **What if I'm already logging to tensorboard?**
+
 `wandb` can automatically log your tensorboard metrics. All you need to do is add the `sync_tensorboard` flag to the `wandb` initialization. Example:
 
 ```
@@ -91,6 +92,7 @@ wandb.init(
 ```
 
 **What if I run wandb in a notebook?**
+
 Everything will work nicely but you need to add `wandb.finish()` at the very bottom of your notebook (after you're done with training/evaluation.)
 
 **Will `wandb` work with my code?**
