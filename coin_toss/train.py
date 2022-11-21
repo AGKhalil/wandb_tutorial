@@ -73,10 +73,12 @@ def main():
     )
 
     random.seed(args.seed)
-    run_simulation(
+    results = run_simulation(
         args,
         logger=wandb,
     )
+    for k, v in results.items():
+        print(k, v)
 
 
 if __name__ == "__main__":
